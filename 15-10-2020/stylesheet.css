@@ -1,0 +1,598 @@
+
+html
+{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+	box-sizing: inherit;
+}
+
+@font-face
+{
+	font-family: 'yellowtailregular';
+	src: url('fonts/yellowtail-regular.woff2') format('woff2'),
+	url('fonts/yellowtail-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+{
+	padding: 0;
+	margin: 0;
+	background: white;
+	font-family: helvetica, arial, sans-serif;
+	color: rosybrown;
+}
+
+.wrapper
+{
+	max-width: 1000px;
+	margin: 0 auto 15px auto;
+	position: relative;
+}
+
+.container
+{
+	display: grid;
+}
+
+header h1
+{
+	font-family: 'yellowtailregular';
+	margin: 0;
+	color: maroon;
+	text-align: center;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+
+h2
+{
+	color: darkgoldenrod;
+	font-size: 1.125em;
+}
+
+header
+{
+	color: #999;
+	border-radius: 0 30px 0 0;
+	border-bottom: solid 1px goldenrod;
+}
+
+main
+{
+	background: white;
+	border-left: solid 1px #faf0e8;
+	border-right: solid 1px #faf0e8;
+}
+
+nav
+{
+	background: #fcf8fc;
+	border-left: solid 1px #faf0e8;
+}
+
+nav ul
+{
+	margin-left:0;
+	padding-left:0;
+}
+
+nav ul li
+{
+	list-style-type: none;
+}
+
+aside
+{
+	background: snow;
+	color: darkgoldenrod;
+	border-right: solid 1px #faf0e8;
+}
+
+footer
+{
+	background: #fbe3d0;
+	color: maroon;
+	border-radius: 0 0 0 30px;
+	margin: 0;
+	border-top: solid 1px goldenrod;
+	
+}
+
+header a
+{
+	color: maroon;
+}
+
+main a, aside a
+{
+	text-decoration: underline;
+	color: darkgoldenrod;
+}
+
+nav a
+{
+	text-decoration: none;
+	color: maroon;
+	font-weight: bold;
+}
+
+main a:visited
+{
+	text-decoration: none;
+	color: darkgoldenrod;
+}
+
+main a:hover
+{
+	text-decoration: underline;
+}
+
+main a:active
+{
+	text-decoration: underline;
+}
+
+nav a.active
+{
+	color: goldenrod;
+	text-decoration: none;
+}
+
+header h1 a
+{
+	text-decoration: underline;
+}
+
+#topbanner
+{
+	width:100%;
+	margin:0;
+	height: 34px;
+	position: fixed;
+	top:0;
+	background-color: rgba(255,245,238,0.9);
+	padding: 10px;
+	text-align: center;
+	font-size: 0.75em;
+	box-shadow: 0px 3px 7px 2px #DEB887;
+	z-index: 2;
+}
+#topbanner a
+{
+	color: darkgoldenrod;
+}
+
+#subheadline
+{
+	padding:0;
+	margin:0;
+	font-family: Monotype Corsiva, Brush Script MT, cursive;
+	text-align: center;
+	color: darkgoldenrod;
+	display: block;
+	position:relative;
+	font-weight: bold;
+}
+
+.right
+{
+	float: right;
+}
+
+.left
+{
+	float: left;
+}
+
+.clear
+{
+	float: clear;
+}
+
+.hide
+{
+	display:none;
+}
+
+.tilde
+{
+	/* color: goldenrod; */
+}
+
+.container > *
+{
+	padding: 20px;
+}
+
+:focus
+{
+	outline: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+footer .copy
+{
+	color: goldenrod;
+}
+
+table
+{
+  border: 2px solid darkgoldenrod;
+  padding:5px;
+}
+
+th
+{
+	min-width:110px;
+	text-align: left;
+}
+
+.strong
+{
+ font-weight: bold;	
+}
+
+img
+{
+
+	padding:7px;
+}
+
+figcaption
+{
+	font-size: 0.625em;
+	margin-left: 5px;
+}
+
+figure
+{
+	margin: 3px;
+	padding: 3px;
+}
+
+dd
+{
+	margin: 5px;
+}
+
+/* Form Styling *************************************************************/
+
+#form
+{
+
+}
+
+.text-label
+{
+
+}
+
+.text-field
+{
+	height: 30px;
+	width: 200px;
+}
+
+.email_field
+{
+	height: 30px;
+	width: 200px;
+}
+
+.textarea-field
+{
+	height:100px;
+}
+
+.button
+{
+	text-align: center;
+	background-color: saddlebrown;
+	border: none;
+	color: white;
+	padding: 5px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.25em;
+	width: 100px;
+	margin-left:4px;
+}
+
+.grid-container
+{
+	display: grid;
+	grid-template-columns: 110px 220px;
+	grid-template-rows: 40px 40px 40px 40px 120px 80px 120px 50px;
+	gap: 5px;
+	margin-left: 0;
+	padding-left: 0;
+	position: relative;
+	left:-15px;
+}
+
+.grid-item
+{
+	padding: 5px 5px 5px 15px;
+	width:250px;
+	height:30px;
+}
+
+.radio
+{
+	line-height: 30px;
+}
+
+.small
+{
+	font-size: small;
+}
+
+.fieldset
+{
+	max-width:200px;
+}
+
+
+/* End Form Styling *********************************************************/
+
+
+/* ------------------------------------------------------------------------ */
+/* START <=768 layout */
+
+@media screen and (max-width: 768px)
+{
+	.wrapper
+	{
+			top:30px;
+	}
+	
+	.container
+	{
+		grid-template-columns: 1fr;
+		grid-template-rows: 106px auto auto auto 70px;
+	}
+	
+	main
+	{
+
+	}
+	
+	header
+	{
+		grid-row: 1 / 2;
+		background-image: url("images/header-antique-4.jpg");
+		background-position: left top;
+	}
+  
+	nav
+	{
+		grid-row: 2 / 3;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0px;
+		z-index: 3;
+		border-bottom: solid 3px #faf0e8;
+	}
+  
+	aside
+	{
+		grid-row: 4 / 5;
+		border-top: solid 1px #faf0e8;
+	}
+  
+	footer
+	{
+		grid-row: 5 / 6;
+		font-size: 0.75em;
+	}
+	header h1
+	{
+		font-size: 3.25em;
+		top:-14px;
+	}
+	
+	header #subheadline
+	{
+		top:-20px;
+		font-size: 1.375em;
+	}
+	
+	.hide-sml{
+		display: none;
+	}
+
+	#ckbox
+	{
+		display: none;
+	}
+
+	#menu
+	{
+		display: none;
+	}
+
+	#ckbox:checked ~ #menu
+	{
+	display: block;
+	}
+	
+	#navigation
+	{
+		top:120px;
+		width:100%;	
+	}
+	
+	nav ul li
+	{
+	line-height: 3.5em;
+	margin-bottom:5px;
+	}
+	
+	nav ul li a
+	{
+		padding:15px 60px 15px 0;	
+	}
+	
+	.menu-label
+	{
+		font-size: 1.25em;
+		color: maroon;
+	}
+	
+	.menu-label
+	{
+		padding: 22px 200px 14px 0;
+		position: relative;
+		top: 5px;
+	}
+	.textarea-field
+	{
+	width: 200px;
+	}
+	main img
+	{
+
+	/* margin: 8px; */
+	}
+
+}
+/* END <=768 layout */
+
+/* ------------------------------------------------------------------------ */
+/* START >768 layout */
+
+@media (min-width: 769px) {
+	body
+	{
+		background-image: url("images/bgnd-tile-sml.gif");
+		background-position: repeat; 	
+	}
+	
+	.wrapper
+	{
+		top: 47px;
+	}
+	
+	.container
+	{
+
+		font-family: helvetica, arial, sans-serif;
+		display: grid;
+		grid-template-columns: 105px repeat(11, 1fr);
+		grid-template-rows: 120px auto 80px;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	header
+	{
+		grid-column-start: span 12;
+		background-image: url("images/header-antique-2.jpg");
+		background-position: left center;
+	}
+	
+	main
+	{
+		grid-column: 3 / 10;
+	}
+	
+	nav
+	{
+		grid-column: 1 / 3;
+		grid-row: 1 / 2;
+	}
+	
+	aside
+	{
+		grid-column: 10 / 13;
+	}
+	
+	footer
+	{
+		grid-column-start: span 12;
+		grid-row: 3 / 4;
+		font-size: 1.0em;
+	}
+	
+	
+	main, nav, aside
+	{
+		grid-row: 2 / 3;
+	}
+	
+	header h1
+	{
+		font-size: 4.25em;
+		top:-25px;
+	}
+	
+	header #subheadline
+	{
+		top:-1.2em;
+		font-size: 1.75em;
+	}
+	
+	footer p
+	{
+		padding:0 20px;
+	}
+	
+	#ckbox
+	{
+		display: none;
+	}
+
+	#menu
+	{
+		display: block;
+	}
+	
+	#navigation
+	{
+		position: sticky;
+		left: -7px;
+		top: 50px;
+		width:170px;
+		font-size: 0.9375em;
+		margin-top:32px;
+	}
+	
+	nav ul li
+	{
+	line-height: 3.5em;
+	}
+	
+	nav ul li a
+	{
+		padding:10px 10px 10px 0;	
+	}
+	
+	.menu-label
+	{
+		display:none;
+	}
+	
+	.textarea-field
+	{
+	width: 260px;
+	}
+	.large-right
+	{
+	float: right;
+	}
+	
+}
+
+/* END >768 layout */
+
+

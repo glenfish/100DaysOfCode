@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contact Us - Luna Maes Belgian Patisserie</title>
+	<meta charset="utf-8">
+	<meta name="date" content="02-07-2020" scheme="DD-MM-YYYY">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Stroll by for a truly memorable Belgian cafe experience on Sydney's waterfront. Dine in or order ahead online from our patisserie. Download our app for fast take out. We bring you the finest pastries, croissants, cakes and desserts with true Belgian style and sophistication. Luna Maes woulde love to cater your next event. See our full menu or have us design one for you.">
+	<meta name="keywords" content="patisserie,cafe,bakery,cakes,pastries,croissants,desserts,tarts,biscuits,coffee">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" />
+</head>
+
+<body>
+	<section id="topbanner"><a href="#">Click here to download our App and skip the wait!</a></section>
+	<div class="wrapper">
+		
+		<div class="container">
+			<header>
+				<h1><a href="index.html">Luna Maes</a></h1>
+				<div id="subheadline">Belgian Patisserie</div>
+			</header>
+			<main id="main-content">
+				<h2>Contact Luna Maes</h2>
+				<form action="response.html" method="post" id="form">
+					<section class="grid-container">
+						
+							
+						<div class="grid-item"><label class="text-label" for="fname">First name:*</label></div>
+						<div class="grid-item"><input class="text-field" type="text" name="fname" id="fname" required></div>
+							
+							
+						<div class="grid-item"><label class="text-label" for="lname">Last name:*</label></div>
+						<div class="grid-item"><input class="text-field" type="text" name="lname" id="lname" required></div>
+						
+						<div class="grid-item"><label class="phone-label" for="phone">Mobile Phone:*</label></div>
+						<div class="grid-item"><input class="text-field" type="tel" name="phone" id="phone" required pattern="[0-9]{4}[0-9]{3}[0-9]{3}"></div>						
+							
+						<div class="grid-item"><label class="email-label" for="email">Email:*</label></div>
+						<div class="grid-item"><input class="text-field" type="email" name="email" id="email" required></div>
+							
+						<div class="grid-item"><label class="textarea-label" for="textarea">Message:*</label></div>
+						<div class="grid-item"><textarea class="textarea-field" name="message" id="textarea" required></textarea></div>
+						
+						<div class="grid-item"><label for="timetocall">Please call:</label></div>
+						<div class="grid-item">
+							<fieldset class="fieldset">
+								<p>
+									<select name="timetocall" id = "timetocall">
+										<option value = "morning">morning</option>
+										<option value = "afternoon">afternoon</option>
+										<option value = "evening">evening</option>
+									</select>
+								</p>
+							</fieldset>
+						</div>
+						
+						<div class="grid-item">
+							<label class="radio-label" for="regarding">Regarding:</label>
+						</div>
+						<div class="grid-item">
+							<fieldset class="fieldset">
+								<input type="radio" class="radio" id="neworder" name="regarding" value="neworder">
+								<label for="neworder" class="radio">New order</label><br>
+								<input type="radio" class="radio" id="existingorder" name="regarding" value="existingorder">
+								<label for="existingorder" class="radio">Existing order</label><br>
+								<input type="radio" class="radio" id="feedback" name="regarding" value="feedback">
+								<label for="feedback" class="radio">Feedback</label><br>
+							</fieldset>
+						</div>
+						
+						
+						<div class="grid-item small">* required</div>
+						<div class="grid-item small"><button type="submit" class="button">Submit</button></div>
+					</section>
+				</form>
+			</main>
+			<nav>	
+				<section id="navigation">
+					<label for="ckbox" class="menu-label">Menu ></label>
+					<input type="checkbox" id="ckbox" />
+						<ul id="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="cakes-pastries-desserts.html">Cakes & Pastries</a></li>
+							<li><a href="catering.html">Catering</a></li>
+							<li><a href="hours-locations.html">Locations & Hours</a></li>
+							<li><a class="active" href="contact-us.html">Contact Us</a></li>	
+						</ul>
+				</section>
+			</nav>
+			<aside>
+				<article>
+					<h2>DID YOU KNOW?</h2>
+					<p>Both our locations use 100% green energy for all lighting and power. Luna Maes is focused on our impact on the environment. Our 2021 goal is to reduce our carbon footprint by 50%.</p>
+					<p>Our wonderful patrons are the reason we enjoy baking traditional Belgian pastries, desserts and biscuits. We hope to serve you in the future. Don't be shy, come say hi!</p>
+				</article>
+			</aside>
+			<footer>
+				<p>
+					<span class="left"><span class="hide-sml">Contact&nbsp;</span>Ph: 1300 246 655</span>
+					<span class="right copy">Luna Maes &copy; 2020</span>
+				</p>
+			</footer>
+		</div>
+	</div> 
+
+</body>
+
+</html>
