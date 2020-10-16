@@ -4,10 +4,11 @@ html {
   }
 body {
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
     /* background-color: black; */
     min-width: 500px;
     color: rgb(194, 194, 194);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size:1.25em;
     
 }
 a {
@@ -31,7 +32,7 @@ nav {
     position:absolute;
     top:0;
     height:100px;
-    background-color:rgb(36, 36, 36);
+    background-color:rgb(36, 36, 36, 0.6);
     color:rgb(145, 145, 145);
     font-weight: bolder;
     font-size:1.5em;
@@ -60,8 +61,6 @@ p {
 }
 nav ul{
     display: flex;
-    
-
 }
 nav li {
     display: flex;
@@ -72,8 +71,8 @@ nav li {
 
 }
 #pagecontainer {
-        background: rgb(5, 1, 21); /* Purple background */
-     
+        background: rgba(0, 0, 0, 0.2); /* Purple background */
+        border: dotted 1px rgb(34, 34, 34);
         
  
         margin-top:100px;
@@ -83,6 +82,9 @@ nav li {
 figure {
     color: rgb(228, 228, 228);
     margin:5px;
+}
+img {
+    border: solid 1px rgb(41, 41, 41);
 }
 .left{
     float:left;
@@ -103,7 +105,7 @@ footer {
     
     height: 80px;
     width: 100%;
-    background-color:rgb(36, 36, 36);
+    background-color:rgb(36, 36, 36, 0.6);
     color:rgb(145, 145, 145);
     display: flex;
     align-items: center;
