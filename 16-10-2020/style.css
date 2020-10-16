@@ -1,0 +1,114 @@
+html {
+    background-image: url(https://lh3.googleusercontent.com/BngVDxSTcj6VutbaQr9HTqEhVNrZky9aHSpeKCAys4_gVOtbj_Ef2k9qRcLzXI087FzvxwHnQ69aLy_1P38n88tOSzEaj3BoswyjrxQEP_6T493gs6-JFoLU_KkOF8EhwJmQqL--9A);
+    background-repeat: repeat-x repeat-y; 
+  }
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    /* background-color: black; */
+    min-width: 500px;
+    color: rgb(194, 194, 194);
+    
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    color:red;
+    /* padding:15px 15px 0px 35px; */
+    margin: 0 0 30px 0;
+    font-size:4.75em;
+    font-family: 'Bungee Shade', cursive;
+    letter-spacing: 5px;
+}
+.menuitem {
+    font-family: 'Jomhuria', cursive;
+    font-size:3.5em;
+    letter-spacing: 3px;
+}
+nav {
+    position:absolute;
+    top:0;
+    height:100px;
+    background-color:rgb(36, 36, 36);
+    color:rgb(145, 145, 145);
+    font-weight: bolder;
+    font-size:1.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav .active {
+    color: white;
+}
+main {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+article {
+    width:85%;
+    line-height: 1.75em;
+}
+p {
+    padding:30px 5px 20px 5px;
+}
+nav ul{
+    display: flex;
+    
+
+}
+nav li {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5px 40px 5px 40px;
+    text-decoration: none;
+    list-style: none;
+
+}
+#pagecontainer {
+        background: rgb(5, 1, 21); /* Purple background */
+     
+        
+ 
+        margin-top:100px;
+        padding:35px;
+        max-width:1000px;
+}
+figure {
+    color: rgb(228, 228, 228);
+    margin:5px;
+}
+.left{
+    float:left;
+}
+.padleft {
+    padding-left: 30px;
+}
+.right {
+    text-align: right;
+    padding-right:30px;
+    padding-bottom: 25px;
+}
+.page {
+    float: right;
+    color: rgb(79, 79, 79);
+}
+footer {
+    
+    height: 80px;
+    width: 100%;
+    background-color:rgb(36, 36, 36);
+    color:rgb(145, 145, 145);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clear {
+    clear: both;
+}
