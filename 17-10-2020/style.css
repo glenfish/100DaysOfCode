@@ -1,0 +1,80 @@
+html {
+    color:#222;
+    font-family: 'Commissioner', sans-serif;
+    background-color: white;
+    background-image: url(images/background-1.jpg) 
+}
+main {
+    width:800px;
+    margin: 0 auto 40px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 10px 10px #68bf6b;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    color:green;
+    font-size:4.75em;
+    text-align: center;
+    /* background-color: #666; */
+    padding-bottom: 0;
+    margin: 0 auto 5px auto;
+}
+img {
+    margin-bottom: 0;
+    padding-bottom:0;
+    border-radius: 50%;
+}
+a {
+    text-decoration: none;
+    padding-top:3px;
+    display: block;
+}
+#recipecard {
+    width: 480px;
+    padding:25px;
+    border-radius: 25px;
+    margin: 20px auto;
+    text-align: left;
+}
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #68bf6b; 
+}
+#recipecard table th {
+    padding: 8px;
+
+}
+#recipecard table td {
+    padding: 8px;
+
+}
+.even {
+    background-color: #68bf6b;
+    color: white;
+}
+.odd {
+    background-color: rgb(254, 239, 190);
+}
+.even h2 {
+    color:yellow;
+}
+.odd h2 {
+    color: green;
+}
+.center {
+    text-align: center;
+}
+#icon {
+    margin: 0 auto 25px auto;
+    background-image: url("images/knife-fork-icon.png"); 
+    height: 30px; 
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    width: 400px;
+    display: block;
+    
+}
