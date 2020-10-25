@@ -78,6 +78,7 @@ nav li {
         margin-top:100px;
         padding:35px;
         max-width:1000px;
+        width: 95%;
 }
 figure {
     color: rgb(228, 228, 228);
