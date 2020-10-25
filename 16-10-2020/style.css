@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     /* background-color: black; */
-    min-width: 500px;
+    /* min-width: 500px; */
     color: rgb(194, 194, 194);
     font-family: 'Barlow Condensed', sans-serif;
     font-size:1.25em;
