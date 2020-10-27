@@ -1,87 +1,49 @@
-$body-background: #313134;
-$text: #a4c2a8;
-$font: 'Noto Sans JP', 'Arial', sans-serif;
-$bold-h3: 'Roboto';
-@mixin anim-box {
-    color: #fff;
-    // background: #5a5a66;
-    padding: 0px 20px 0px 20px;
-    border-radius: 5px;
-    margin: 5px;
-    min-width: 130px;
-}
-body {
-    background: $body-background;
-    color: $text;
-    font-family: $font;
-}
-p{
-    font-size: 0.75em;
-}
-h3 {
-    size: .75em;
-    margin: 8px auto;
-    text-align: left;
-    font-weight: 300;
-}
-#box-container {
-    display:flex;
-    width:60%;
-    justify-content: flex-start;
-    margin: 0 auto;
-}
-.anim-box {
-    @include anim-box;
-    & p {
-        display: none;
-    }
-    &:hover {
-        h3 {
-            color: #2a2b2e;
-            font-family: $bold-h3;
-            margin-top:13px;
-            font-size: 1.25em;
-            text-align: right;
-            width: 80%;
-        }
-        margin:5px 0px 0px 0px;
-        transform: skew(-2deg) translate(10px,0px);
-        width:240px;
-        & p {
-            text-align: justify;
-            display:block;
-            color: #2a2b2e;
-        }
-        animation: fade-in 0.5s ease-in-out;
-    }
-}
-.one {
-    @extend .anim-box;
-    &:hover {
-        background-color: #a4c2a8;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Animation_1</title>
+</head>
+<body>
+    <!-- <h1>Test</h1> -->
+    <div id="box-container">
+        <div class="anim-box one">
+            <h3>
+                Menu 1
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ex tempora provident dolorum iusto unde voluptate aliquid nesciunt voluptatum quaerat illum, hic repellat sapiente, quo ipsa reprehenderit veniam consequuntur beatae.
+            </p>
+        </div>
+        <div class="anim-box two">
+            <h3>
+                Menu 2
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ex tempora provident dolorum iusto unde voluptate aliquid nesciunt voluptatum quaerat illum, hic repellat sapiente, quo ipsa reprehenderit veniam consequuntur beatae.
+            </p>
+        </div>
+        <div class="anim-box three">
+            <h3>
+                Menu 3
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ex tempora provident dolorum iusto unde voluptate aliquid nesciunt voluptatum quaerat illum, hic repellat sapiente, quo ipsa reprehenderit veniam consequuntur beatae.
+            </p>
+        </div>
+        <div class="anim-box four">
+            <h3>
+                Menu 4
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium ex tempora provident dolorum iusto unde voluptate aliquid nesciunt voluptatum quaerat illum, hic repellat sapiente, quo ipsa reprehenderit veniam consequuntur beatae.
+            </p>
+        </div>
         
-    }
-}
-.two {
-    @extend .anim-box;
-    &:hover {
-        background-color: #aceb98;
-    }
-}
-.three {
-    @extend .anim-box;
-    &:hover {
-        background-color: #87ff65;
-    }
-}
-.four {
-    @extend .anim-box;
-    &:hover {
-        background-color: #35F500;
-    }
-}
-
-@keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    </div>
+</body>
+</html>
