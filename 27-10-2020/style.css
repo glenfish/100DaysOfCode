@@ -1,0 +1,90 @@
+body {
+  background: #2a2b2e;
+  color: #a4c2a8;
+  font-family: "Noto Sans JP", "Arial", sans-serif;
+}
+
+h3 {
+  size: .75em;
+  margin: 8px auto;
+  text-align: left;
+  font-weight: 300;
+}
+
+#box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.anim-box, .one, .two, .three, .four {
+  color: #fff;
+  padding: 0px 20px 0px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  min-width: 130px;
+}
+
+.anim-box p, .one p, .two p, .three p, .four p {
+  display: none;
+}
+
+.anim-box:hover, .one:hover, .two:hover, .three:hover, .four:hover {
+  margin: 5px 0px 0px 0px;
+  -webkit-transform: skew(-2deg) translate(10px, 0px);
+          transform: skew(-2deg) translate(10px, 0px);
+  -webkit-animation: fade-in 0.5s ease-in-out;
+          animation: fade-in 0.5s ease-in-out;
+}
+
+.anim-box:hover h3, .one:hover h3, .two:hover h3, .three:hover h3, .four:hover h3 {
+  color: #2a2b2e;
+  font-family: "Roboto";
+  margin-top: 13px;
+  font-size: 1.25em;
+}
+
+.anim-box:hover p, .one:hover p, .two:hover p, .three:hover p, .four:hover p {
+  display: block;
+  color: #2a2b2e;
+}
+
+.one:hover {
+  background-color: #a4c2a8;
+}
+
+.two:hover {
+  background-color: #aceb98;
+}
+
+.three:hover {
+  background-color: #87ff65;
+}
+
+.four:hover {
+  background-color: #35F500;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
