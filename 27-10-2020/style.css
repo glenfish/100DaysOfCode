@@ -1,7 +1,11 @@
 body {
-  background: #2a2b2e;
+  background: #313134;
   color: #a4c2a8;
   font-family: "Noto Sans JP", "Arial", sans-serif;
+}
+
+p {
+  font-size: 0.75em;
 }
 
 h3 {
@@ -38,6 +42,7 @@ h3 {
   margin: 5px 0px 0px 0px;
   -webkit-transform: skew(-2deg) translate(10px, 0px);
           transform: skew(-2deg) translate(10px, 0px);
+  width: 240px;
   -webkit-animation: fade-in 0.5s ease-in-out;
           animation: fade-in 0.5s ease-in-out;
 }
@@ -47,9 +52,12 @@ h3 {
   font-family: "Roboto";
   margin-top: 13px;
   font-size: 1.25em;
+  text-align: right;
+  width: 80%;
 }
 
 .anim-box:hover p, .one:hover p, .two:hover p, .three:hover p, .four:hover p {
+  text-align: justify;
   display: block;
   color: #2a2b2e;
 }
@@ -87,4 +95,3 @@ h3 {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=style.css.map */
